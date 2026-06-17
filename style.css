@@ -407,6 +407,17 @@ p {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
+.skill-detail {
+  margin: 0;
+  padding-left: 1.1em;
+  color: var(--gray-3);
+  font-size: 12px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+.skill-detail li {
+  margin: 0 0 4px;
+}
 .projects-content {
   max-width: 980px;
   margin: 0 auto;
@@ -682,6 +693,16 @@ p {
 .process-title.is-empty {
   visibility: hidden;
 }
+.process-side.has-title {
+  grid-template-rows: auto;
+  align-content: center;
+}
+.process-side.has-title .process-text {
+  min-height: auto;
+}
+.process-side.has-title .process-description-area {
+  display: none;
+}
 .work-meta,
 .process-meta {
   min-height: 18px;
@@ -911,11 +932,9 @@ footer {
   .skill-row strong {
     text-align: left;
   }
-  .skill-row p {
+  .skill-row p,
+  .skill-detail {
     max-width: 320px;
-  }
-  .project-block p {
-    text-align: left;
   }
   .project-data {
     grid-template-columns: 1fr;
@@ -962,6 +981,14 @@ footer {
   .process-text {
     min-height: 96px;
   }
+  .process-side.has-title {
+    min-height: 180px;
+    grid-template-rows: auto;
+    align-content: center;
+  }
+  .process-side.has-title .process-text {
+    min-height: auto;
+  }
   .work-title,
   .process-title {
     min-height: 44px;
@@ -995,6 +1022,10 @@ footer {
   .process-meta {
     font-size: 11px;
     line-height: 1.8;
+  }
+  .caption-area,
+  .process-description-area {
+    margin-top: 18px;
   }
   .slide-description,
   .process-description {
