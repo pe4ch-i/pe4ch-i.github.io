@@ -99,36 +99,48 @@
             <img src="icon-1.PNG" alt="Illustrator icon">
           </div>
           <strong>ILLUSTRATOR</strong>
-          <p>
-            ロゴやポスター、パッケージなどのベクター制作を中心に、タイポグラフィを活かしたグラフィックを構成する。
-          </p>
+          <ul class="skill-detail">
+            <li>印刷物のデザイン</li>
+            <li>Web向けロゴデザイン</li>
+            <li>ベクターグラフィック制作</li>
+            <li>タイポグラフィを用いた構成</li>
+          </ul>
         </div>
         <div class="skill-row">
           <div class="skill-icon">
             <img src="icon-2.PNG" alt="Photoshop icon">
           </div>
           <strong>PHOTOSHOP</strong>
-          <p>
-            写真補正や合成、レタッチに加え、グラフィックの質感調整やモックアップ制作を行う。
-          </p>
+          <ul class="skill-detail">
+            <li>写真の補正・レタッチ</li>
+            <li>画像合成</li>
+            <li>グラフィックの質感調整</li>
+            <li>ポートフォリオ用画像の編集</li>
+          </ul>
         </div>
         <div class="skill-row">
           <div class="skill-icon">
             <img src="icon-3.PNG" alt="Procreate icon">
           </div>
           <strong>PROCREATE</strong>
-          <p>
-            スケッチやイラストレーションを中心に、直感的な表現やアイデアの可視化に活用する。
-          </p>
+          <ul class="skill-detail">
+            <li>イラストレーション制作</li>
+            <li>ラフ・スケッチ制作</li>
+            <li>作字やロゴの初期案作成</li>
+            <li>直感的なアイデアの可視化</li>
+          </ul>
         </div>
         <div class="skill-row">
           <div class="skill-icon">
             <img src="icon-4.PNG" alt="Blender icon">
           </div>
           <strong>BLENDER</strong>
-          <p>
-            3Dモデリングやレンダリングを用いたプロダクト表現やビジュアライズを行う。
-          </p>
+          <ul class="skill-detail">
+            <li>3Dモデリング</li>
+            <li>レンダリング</li>
+            <li>立体物のビジュアライズ</li>
+            <li>作品やプロダクトの構造検討</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -500,7 +512,7 @@
         alt: '制作プロセス 4',
         title: '',
         meta: '',
-        description: '加工時の歪みを治すため焼き鈍しをして酸洗いをする。'
+        description: '加工時の歪みを直すため、焼き鈍しをして酸洗いをする。'
       },
       {
         image: 'purosesu-5.PNG',
@@ -514,7 +526,7 @@
         alt: '制作プロセス 6',
         title: '',
         meta: '',
-        description: 'ロー払いをして表面を平に整える。'
+        description: 'ロウ払いをして表面を平らに整える。'
       },
       {
         image: 'purosesu-7.PNG',
@@ -577,6 +589,7 @@
     const processImage = document.getElementById('processImage');
     const processPlaceholder = document.getElementById('processPlaceholder');
     const processCount = document.getElementById('processCount');
+    const processSide = document.querySelector('.process-side');
     const processTitle = document.getElementById('processTitle');
     const processMeta = document.getElementById('processMeta');
     const processDescription = document.getElementById('processDescription');
@@ -657,6 +670,7 @@
       processMeta.textContent = item.meta;
       processDescription.textContent = item.description;
       processPlaceholder.textContent = item.image;
+      processSide.classList.toggle('has-title', !!item.title);
       processTitle.classList.toggle('is-empty', !item.title);
       processMeta.classList.toggle('is-empty', !item.meta);
       processDescriptionArea.classList.toggle('is-empty', !item.description);
