@@ -6,63 +6,55 @@
   <title>Momoi Yamato Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="page-loader">
     <span>Momoi Yamato</span>
   </div>
+
   <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
     <span></span>
     <span></span>
     <span></span>
   </button>
+
   <nav class="site-menu" aria-label="ページ内メニュー">
     <div class="menu-panel">
       <a class="menu-logo" href="#top">Contexts</a>
+
       <ul class="menu-list">
-        <li>
-          <a href="#top" class="menu-link">Top</a>
-        </li>
-        <li>
-          <a href="#profile" class="menu-link">Profile</a>
-        </li>
-        <li>
-          <a href="#skills" class="menu-link">Skills</a>
-        </li>
+        <li><a href="#top" class="menu-link">Top</a></li>
+        <li><a href="#profile" class="menu-link">Profile</a></li>
+        <li><a href="#skills" class="menu-link">Skills</a></li>
+
         <li class="menu-group">
           <button class="menu-works-toggle" type="button" aria-expanded="false">
             Works
           </button>
+
           <ul class="works-submenu">
-            <li>
-              <a href="#works" data-menu-category="daigaku">大学での作品</a>
-            </li>
-            <li>
-              <a href="#works" data-menu-category="typo">タイポグラフィ</a>
-            </li>
-            <li>
-              <a href="#works" data-menu-category="kojin">自主制作</a>
-            </li>
-            <li>
-              <a href="#works" data-menu-category="sakka">作家活動</a>
-            </li>
+            <li><a href="#works" data-menu-category="daigaku">大学での作品</a></li>
+            <li><a href="#works" data-menu-category="typo">タイポグラフィ</a></li>
+            <li><a href="#works" data-menu-category="kojin">自主制作</a></li>
+            <li><a href="#works" data-menu-category="sakka">作家活動</a></li>
           </ul>
         </li>
-        <li>
-          <a href="#projects" class="menu-link">Projects</a>
-        </li>
-        <li>
-          <a href="#process" class="menu-link">Process</a>
-        </li>
+
+        <li><a href="#projects" class="menu-link">Projects</a></li>
+        <li><a href="#process" class="menu-link">Process</a></li>
       </ul>
     </div>
   </nav>
+
   <header class="hero" id="top">
     <div class="hero-inner">
       <div class="portfolio-mark">
         <h1 class="portfolio-title">(Portfolio)</h1>
       </div>
+
       <nav class="top-contexts" aria-label="目次">
         <p class="contexts-label">contexts</p>
+
         <div class="contexts-inline">
           <a href="#profile">PROFILE</a>
           <span></span>
@@ -77,22 +69,35 @@
       </nav>
     </div>
   </header>
+
   <main>
     <section class="profile compact-section reveal" id="profile">
       <h2>PROFILE</h2>
+
       <div class="profile-content">
         <div class="profile-main">
-          <p class="profile-name">桃井 大和</p>
-          <p class="profile-name-en">Momoi Yamato</p>
-          <p class="profile-role">アーティスト／グラフィックデザイナー</p>
-          <p>
-            2004年群馬県みどり市生まれ。多摩美術大学工芸学科金属専攻に在学し、素材そのものの質感や構造に関心を持ち制作をしている。グラフィックデザインに関心を持ち、分野を横断した制作に取り組んでいる。
-          </p>
+          <div class="profile-heading">
+            <figure class="profile-portrait">
+              <img src="jigazo-1.PNG" alt="桃井大和の自画像">
+            </figure>
+
+            <div class="profile-heading-copy">
+              <p class="profile-name">桃井 大和</p>
+              <p class="profile-name-en">Momoi Yamato</p>
+              <p class="profile-role">アーティスト／グラフィックデザイナー</p>
+
+              <p class="profile-bio">
+                2004年群馬県みどり市生まれ。多摩美術大学工芸学科金属専攻に在学し、素材そのものの質感や構造に関心を持ち制作をしている。グラフィックデザインに関心を持ち、分野を横断した制作に取り組んでいる。
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <section class="skills compact-section reveal" id="skills">
       <h2>SKILLS</h2>
+
       <div class="skills-list">
         <div class="skill-row">
           <div class="skill-icon">
@@ -106,6 +111,7 @@
             <li>タイポグラフィを用いた構成</li>
           </ul>
         </div>
+
         <div class="skill-row">
           <div class="skill-icon">
             <img src="icon-2.PNG" alt="Photoshop icon">
@@ -118,6 +124,7 @@
             <li>ポートフォリオ用画像の編集</li>
           </ul>
         </div>
+
         <div class="skill-row">
           <div class="skill-icon">
             <img src="icon-3.PNG" alt="Procreate icon">
@@ -130,6 +137,7 @@
             <li>直感的なアイデアの可視化</li>
           </ul>
         </div>
+
         <div class="skill-row">
           <div class="skill-icon">
             <img src="icon-4.PNG" alt="Blender icon">
@@ -144,8 +152,10 @@
         </div>
       </div>
     </section>
+
     <section class="works main-section reveal" id="works">
       <h2>WORKS</h2>
+
       <div class="works-body">
         <div class="category-tabs">
           <button class="category-button active" type="button" data-category="daigaku">
@@ -161,26 +171,27 @@
             作家活動
           </button>
         </div>
+
         <div class="slider">
-          <button class="slider-button prev" type="button" aria-label="前の作品">
-            ‹
-          </button>
+          <button class="slider-button prev" type="button" aria-label="前の作品">‹</button>
+
           <div class="slide">
-            <p class="slide-count" id="slideCount">
-              ● ・ ・ ・ ・ ・
-            </p>
+            <p class="slide-count" id="slideCount">● ・ ・ ・ ・ ・</p>
+
             <div class="slide-main">
               <div class="slide-frame">
                 <img id="slideImage" src="daigaku-1.PNG" alt="大学での作品 1">
-                <p class="image-placeholder" id="imagePlaceholder">
-                  daigaku-1.PNG
-                </p>
+                <p class="image-placeholder" id="imagePlaceholder">daigaku-1.PNG</p>
               </div>
+
               <div class="work-side">
                 <div class="work-text">
                   <h3 class="work-title" id="workTitle">布</h3>
-                  <p class="work-meta" id="workMeta">すり出しリング / シルバー925 / 202407</p>
+                  <p class="work-meta" id="workMeta">
+                    すり出しリング / シルバー925 / 202407
+                  </p>
                 </div>
+
                 <div class="caption-area" id="captionArea">
                   <p class="slide-description" id="slideDescription">
                     ヒトは金属に直線的なイメージを持っていて、触ると冷たく、硬い。そんなモノが肌と接触することは相容れないのではないだろうか。しかし、金属は私の熱を受け止めてくれる。我儘な自分を受け入れてくれる。私の金属は温かい。
@@ -189,37 +200,43 @@
               </div>
             </div>
           </div>
-          <button class="slider-button next" type="button" aria-label="次の作品">
-            ›
-          </button>
+
+          <button class="slider-button next" type="button" aria-label="次の作品">›</button>
         </div>
       </div>
     </section>
+
     <section class="projects compact-section reveal" id="projects">
       <h2>PROJECTS</h2>
+
       <div class="projects-content">
         <div class="project-block">
           <h3>芸術祭実行委員会護美局での活動</h3>
+
           <p>
             多摩美術大学芸術祭実行委員会の護美局に所属し、2024年・2025年の会計を担当しました。
             護美局では、芸術祭で発生するすべてのゴミの管理を行い、会場内のゴミ箱設置、分別管理、廃材の処理、
             ペンキ汚れ等の原状復帰に取り組みました。ゴミ箱は環境建築デザインの局員と相談し、
             保管や再利用を考慮した折りたたみ式の構造で制作しました。
           </p>
+
           <p>
             また、芸術祭公式マスコット「タマムシ」の魅力を広げるため、グッズ企画、販売計画、SNS広報、
             グリーティングの運営にも関わりました。新規商品の企画に加え、2023年に売れ残った在庫の再販売も行い、
             仕入数、原価、販売価格、在庫数を整理しながら、売上や支出を管理しました。
           </p>
+
           <p>
-            その結果、グッズ売上は2024年に前年度比166.9%、2025年には110.1%を達成し、
+            その結果、グッズ売上は2024年に前年度比166.9%、2025年には127.1%を達成し、
             両年とも全商品の完売を実現しました。
           </p>
         </div>
+
         <div class="project-gallery-block">
           <div class="project-gallery-head">
             <p>2024 Goods Design</p>
           </div>
+
           <div class="project-gallery project-gallery-2024">
             <button class="project-image-button" type="button">
               <img src="geisai-1.PNG" alt="2024年 芸祭グッズデザイン 1">
@@ -228,6 +245,7 @@
               <img src="geisai-2.PNG" alt="2024年 芸祭グッズデザイン 2">
             </button>
           </div>
+
           <div class="project-data project-data-inline">
             <div class="data-card">
               <strong>¥594,700</strong>
@@ -239,10 +257,12 @@
             </div>
           </div>
         </div>
+
         <div class="project-gallery-block">
           <div class="project-gallery-head">
             <p>2025 Goods Design</p>
           </div>
+
           <div class="project-gallery project-gallery-2025">
             <button class="project-image-button" type="button">
               <img src="geisai-3.PNG" alt="2025年 芸祭グッズデザイン 1">
@@ -254,9 +274,10 @@
               <img src="geisai-5.PNG" alt="2025年 芸祭グッズデザイン 3">
             </button>
           </div>
+
           <div class="project-data project-data-inline">
             <div class="data-card">
-              <strong>¥655,000</strong>
+              <strong>¥755,000</strong>
               <p>新規企画グッズ</p>
             </div>
             <div class="data-card">
@@ -267,546 +288,630 @@
         </div>
       </div>
     </section>
+
     <section class="process main-section reveal" id="process">
       <h2>PROCESS</h2>
+
       <div class="works-body process-body">
         <div class="slider process-slider">
-          <button class="slider-button process-prev" type="button" aria-label="前の工程">
-            ‹
-          </button>
+          <button class="slider-button process-prev" type="button" aria-label="前の工程">‹</button>
+
           <div class="slide process-slide">
             <p class="slide-count" id="processCount">
               ● ・ ・ ・ ・ ・ ・ ・ ・ ・ ・ ・
             </p>
+
             <div class="slide-main process-main">
               <div class="slide-frame process-frame">
                 <img id="processImage" src="kansei-1.PNG" alt="蓋物 完成写真">
-                <p class="image-placeholder" id="processPlaceholder">
-                  kansei-1.PNG
-                </p>
+                <p class="image-placeholder" id="processPlaceholder">kansei-1.PNG</p>
               </div>
+
               <div class="work-side process-side">
                 <div class="work-text process-text">
                   <h3 class="work-title process-title" id="processTitle">蓋物</h3>
                   <p class="work-meta process-meta" id="processMeta">202512</p>
                 </div>
+
                 <div class="caption-area process-description-area" id="processDescriptionArea">
                   <p class="slide-description process-description" id="processDescription"></p>
                 </div>
               </div>
             </div>
           </div>
-          <button class="slider-button process-next" type="button" aria-label="次の工程">
-            ›
-          </button>
+
+          <button class="slider-button process-next" type="button" aria-label="次の工程">›</button>
         </div>
       </div>
     </section>
   </main>
+
   <div class="image-modal" aria-hidden="true">
-    <button class="modal-close" type="button" aria-label="拡大画像を閉じる">
-      ×
-    </button>
+    <button class="modal-close" type="button" aria-label="拡大画像を閉じる">×</button>
+
     <div class="modal-content">
       <img id="modalImage" src="" alt="">
       <p class="modal-caption" id="modalCaption"></p>
     </div>
   </div>
+
   <footer>
     <p>© 2026 Momoi Yamato</p>
   </footer>
+
   <script>
     const works = {
       daigaku: {
-        title: '大学での作品',
+        title: "大学での作品",
         items: [
           {
-            image: 'daigaku-1.PNG',
-            alt: '大学での作品 1',
-            title: '布',
-            meta: 'すり出しリング / シルバー925 / 202407',
-            description: 'ヒトは金属に直線的なイメージを持っていて、触ると冷たく、硬い。そんなモノが肌と接触することは相容れないのではないだろうか。しかし、金属は私の熱を受け止めてくれる。我儘な自分を受け入れてくれる。私の金属は温かい。'
+            image: "daigaku-1.PNG",
+            alt: "大学での作品 1",
+            title: "布",
+            meta: "すり出しリング / シルバー925 / 202407",
+            description: "ヒトは金属に直線的なイメージを持っていて、触ると冷たく、硬い。そんなモノが肌と接触することは相容れないのではないだろうか。しかし、金属は私の熱を受け止めてくれる。我儘な自分を受け入れてくれる。私の金属は温かい。"
           },
           {
-            image: 'daigaku-2.PNG',
-            alt: '大学での作品 2',
-            title: '布',
-            meta: '202407',
-            description: 'Open campus2024で選出された様子。'
+            image: "daigaku-2.PNG",
+            alt: "大学での作品 2",
+            title: "布",
+            meta: "202407",
+            description: "Open campus2024で選出された様子。"
           },
           {
-            image: 'daigaku-3.PNG',
-            alt: '大学での作品 3',
-            title: '積層する記憶',
-            meta: '板ガラス / レジン / 202410 / ネットニュース掲載',
-            description: 'ネットニュースに掲載された作品。パソコンのウィンドウは私と似ていた。多趣味な私はいつも何かに熱中している。しかし、熱中する視点の先には1つしか見えていない。'
+            image: "daigaku-3.PNG",
+            alt: "大学での作品 3",
+            title: "積層する記憶",
+            meta: "板ガラス / レジン / 202410 / ネットニュース掲載",
+            description: "ネットニュースに掲載された作品。パソコンのウィンドウは私と似ていた。多趣味な私はいつも何かに熱中している。しかし、熱中する視点の先には1つしか見えていない。"
           },
           {
-            image: 'daigaku-4.PNG',
-            alt: '大学での作品 4',
-            title: '積層する記憶',
-            meta: '板ガラス / レジン / 202410',
-            description: '横から見た様子。'
+            image: "daigaku-4.PNG",
+            alt: "大学での作品 4",
+            title: "積層する記憶",
+            meta: "板ガラス / レジン / 202410",
+            description: "横から見た様子。"
           },
           {
-            image: 'daigaku-5.PNG',
-            alt: '大学での作品 5',
-            title: '他人',
-            meta: '真鍮 / 202411',
-            description: 'ヒトは素の自分を隠しながら呼吸する。私もそうだ。しかしヒトと対話するには素を晒さなければいけない。歩み寄るために私はフィルターのない世界を見る。'
+            image: "daigaku-5.PNG",
+            alt: "大学での作品 5",
+            title: "他人",
+            meta: "真鍮 / 202411",
+            description: "ヒトは素の自分を隠しながら呼吸する。私もそうだ。しかしヒトと対話するには素を晒さなければいけない。歩み寄るために私はフィルターのない世界を見る。"
           },
           {
-            image: 'daigaku-6.PNG',
-            alt: '大学での作品 6',
-            title: '金鎚スタンド',
-            meta: '鉄 / 202505',
-            description: 'バウハウスの椅子のようなシンプルさと機能性を意識したミニマルでマキシマイズなデザインにした。'
+            image: "daigaku-6.PNG",
+            alt: "大学での作品 6",
+            title: "金鎚スタンド",
+            meta: "鉄 / 202505",
+            description: "バウハウスの椅子のようなシンプルさと機能性を意識したミニマルでマキシマイズなデザインにした。"
           }
         ]
       },
+
       typo: {
-        title: 'タイポグラフィ',
+        title: "タイポグラフィ",
         items: [
           {
-            image: 'typo-1.PNG',
-            alt: 'タイポグラフィ 1',
-            title: '月見',
-            meta: 'Procreate / 202509',
-            description: ''
+            image: "typo-1.PNG",
+            alt: "タイポグラフィ 1",
+            title: "月見",
+            meta: "Procreate / 202509",
+            description: ""
           },
           {
-            image: 'typo-2.PNG',
-            alt: 'タイポグラフィ 2',
-            title: '出発',
-            meta: 'Procreate / 202412',
-            description: ''
+            image: "typo-2.PNG",
+            alt: "タイポグラフィ 2",
+            title: "出発",
+            meta: "Procreate / 202412",
+            description: ""
           },
           {
-            image: 'typo-3.PNG',
-            alt: 'タイポグラフィ 3',
-            title: '傀逅',
-            meta: 'Adobe Illustrator / 202604',
-            description: 'TRPGのタイトル。'
+            image: "typo-3.PNG",
+            alt: "タイポグラフィ 3",
+            title: "傀逅",
+            meta: "Adobe Illustrator / 202604",
+            description: "TRPGのタイトル。"
           },
           {
-            image: 'typo-4.PNG',
-            alt: 'タイポグラフィ 4',
-            title: 'ストリガーSRIGA',
-            meta: 'Procreate / 202603',
-            description: '同人ゲームのタイトル。'
+            image: "typo-4.PNG",
+            alt: "タイポグラフィ 4",
+            title: "ストリガーSRIGA",
+            meta: "Procreate / 202603",
+            description: "同人ゲームのタイトル。"
           },
           {
-            image: 'typo-5.PNG',
-            alt: 'タイポグラフィ 5',
-            title: '久尾テル',
-            meta: 'Adobe Illustrator / 202602',
-            description: 'VTuberのロゴデザイン。'
+            image: "typo-5.PNG",
+            alt: "タイポグラフィ 5",
+            title: "久尾テル",
+            meta: "Adobe Illustrator / 202602",
+            description: "VTuberのロゴデザイン。"
           }
         ]
       },
+
       kojin: {
-        title: '自主制作',
+        title: "自主制作",
         items: [
           {
-            image: 'kojin-1.PNG',
-            alt: '自主制作 1',
-            title: 'モリエール',
-            meta: '螺鈿細工 / 202307',
-            description: ''
+            image: "kojin-1.PNG",
+            alt: "自主制作 1",
+            title: "モリエール",
+            meta: "螺鈿細工 / 202307",
+            description: ""
           },
           {
-            image: 'kojin-2.PNG',
-            alt: '自主制作 2',
-            title: 'パジャント',
-            meta: 'アクリル / 色鉛筆 / 202412',
-            description: '受験を終えて見た石膏像は空気を纏っていた。'
+            image: "kojin-2.PNG",
+            alt: "自主制作 2",
+            title: "パジャント",
+            meta: "アクリル / 色鉛筆 / 202412",
+            description: "受験を終えて見た石膏像は空気を纏っていた。"
           },
           {
-            image: 'kojin-3.PNG',
-            alt: '自主制作 3',
-            title: '親愛なるヒーローへ',
-            meta: 'Procreate / 202309',
-            description: 'マジカルミライ2023に感化されて描いた初音ミク。'
+            image: "kojin-3.PNG",
+            alt: "自主制作 3",
+            title: "親愛なるヒーローへ",
+            meta: "Procreate / 202309",
+            description: "マジカルミライ2023に感化されて描いた初音ミク。"
           },
           {
-            image: 'kojin-4.PNG',
-            alt: '自主制作 4',
-            title: '鏡音リン・鏡音レン',
-            meta: 'メモ / 202507',
-            description: '絵文字を使用したアスキーアート。'
+            image: "kojin-4.PNG",
+            alt: "自主制作 4",
+            title: "鏡音リン・鏡音レン",
+            meta: "メモ / 202507",
+            description: "絵文字を使用したアスキーアート。"
           },
           {
-            image: 'kojin-5.PNG',
-            alt: '自主制作 5',
-            title: '初音ミク',
-            meta: 'メモ / 202508',
-            description: '絵文字を使用したアスキーアート。'
+            image: "kojin-5.PNG",
+            alt: "自主制作 5",
+            title: "初音ミク",
+            meta: "メモ / 202508",
+            description: "絵文字を使用したアスキーアート。"
           }
         ]
       },
+
       sakka: {
-        title: '作家活動',
+        title: "作家活動",
         items: [
           {
-            image: 'sakka-1.PNG',
-            alt: '作家活動 1',
-            title: '無題',
-            meta: '',
-            description: ''
+            image: "sakka-1.PNG",
+            alt: "作家活動 1",
+            title: "無題",
+            meta: "",
+            description: ""
           },
           {
-            image: 'sakka-2.PNG',
-            alt: '作家活動 2',
-            title: '無題',
-            meta: '',
-            description: ''
+            image: "sakka-2.PNG",
+            alt: "作家活動 2",
+            title: "無題",
+            meta: "",
+            description: ""
           },
           {
-            image: 'sakka-3.PNG',
-            alt: '作家活動 3',
-            title: '無題',
-            meta: '',
-            description: ''
+            image: "sakka-3.PNG",
+            alt: "作家活動 3",
+            title: "無題",
+            meta: "",
+            description: ""
           },
           {
-            image: 'sakka-4.PNG',
-            alt: '作家活動 4',
-            title: '無題',
-            meta: '',
-            description: ''
+            image: "sakka-4.PNG",
+            alt: "作家活動 4",
+            title: "無題",
+            meta: "",
+            description: ""
           }
         ]
       }
     };
+
     const processes = [
       {
-        image: 'kansei-1.PNG',
-        alt: '蓋物 完成写真',
-        title: '蓋物',
-        meta: '202512',
-        description: ''
+        image: "kansei-1.PNG",
+        alt: "蓋物 完成写真",
+        title: "蓋物",
+        meta: "202512",
+        description: ""
       },
       {
-        image: 'purosesu-1.PNG',
-        alt: '制作プロセス 1',
-        title: '',
-        meta: '',
-        description: '材料にデザインを写して糸鋸で切り出す。'
+        image: "purosesu-1.PNG",
+        alt: "制作プロセス 1",
+        title: "",
+        meta: "",
+        description: "材料にデザインを写して糸鋸で切り出す。"
       },
       {
-        image: 'purosesu-2.PNG',
-        alt: '制作プロセス 2',
-        title: '',
-        meta: '',
-        description: '銀にデザインを写して糸鋸で切り出す。'
+        image: "purosesu-2.PNG",
+        alt: "制作プロセス 2",
+        title: "",
+        meta: "",
+        description: "銀にデザインを写して糸鋸で切り出す。"
       },
       {
-        image: 'purosesu-3.PNG',
-        alt: '制作プロセス 3',
-        title: '',
-        meta: '',
-        description: '自然に落下しないように木槌で伸ばし、隙間を無くす。'
+        image: "purosesu-3.PNG",
+        alt: "制作プロセス 3",
+        title: "",
+        meta: "",
+        description: "自然に落下しないように木槌で伸ばし、隙間を無くす。"
       },
       {
-        image: 'purosesu-4.PNG',
-        alt: '制作プロセス 4',
-        title: '',
-        meta: '',
-        description: '加工時の歪みを直すため、焼き鈍しをして酸洗いをする。'
+        image: "purosesu-4.PNG",
+        alt: "制作プロセス 4",
+        title: "",
+        meta: "",
+        description: "加工時の歪みを直すため、焼き鈍しをして酸洗いをする。"
       },
       {
-        image: 'purosesu-5.PNG',
-        alt: '制作プロセス 5',
-        title: '',
-        meta: '',
-        description: '隙間にフラックスを塗り酸化を防ぎ、3分ロウを溶かしロー付けを行う。'
+        image: "purosesu-5.PNG",
+        alt: "制作プロセス 5",
+        title: "",
+        meta: "",
+        description: "隙間にフラックスを塗り酸化を防ぎ、3分ロウを溶かしロー付けを行う。"
       },
       {
-        image: 'purosesu-6.PNG',
-        alt: '制作プロセス 6',
-        title: '',
-        meta: '',
-        description: 'ロウ払いをして表面を平らに整える。'
+        image: "purosesu-6.PNG",
+        alt: "制作プロセス 6",
+        title: "",
+        meta: "",
+        description: "ロウ払いをして表面を平らに整える。"
       },
       {
-        image: 'purosesu-7.PNG',
-        alt: '制作プロセス 7',
-        title: '',
-        meta: '',
-        description: '銅パイプよりも1mm大きく円形に切り出す。'
+        image: "purosesu-7.PNG",
+        alt: "制作プロセス 7",
+        title: "",
+        meta: "",
+        description: "銅パイプよりも1mm大きく円形に切り出す。"
       },
       {
-        image: 'purosesu-8.PNG',
-        alt: '制作プロセス 8',
-        title: '',
-        meta: '',
-        description: '銅パイプに傷が付かないようにマスキングテープで保護し、ロー払いをして曲面を整える。'
+        image: "purosesu-8.PNG",
+        alt: "制作プロセス 8",
+        title: "",
+        meta: "",
+        description: "銅パイプに傷が付かないようにマスキングテープで保護し、ロー払いをして曲面を整える。"
       },
       {
-        image: 'purosesu-9.PNG',
-        alt: '制作プロセス 9',
-        title: '',
-        meta: '',
-        description: '焼き鈍した帯板をパイプの内径に合うようにする。'
+        image: "purosesu-9.PNG",
+        alt: "制作プロセス 9",
+        title: "",
+        meta: "",
+        description: "焼き鈍した帯板をパイプの内径に合うようにする。"
       },
       {
-        image: 'purosesu-10.PNG',
-        alt: '制作プロセス 10',
-        title: '',
-        meta: '',
-        description: '底板とロー付けをしてパイプの外径の余りを削る。'
+        image: "purosesu-10.PNG",
+        alt: "制作プロセス 10",
+        title: "",
+        meta: "",
+        description: "底板とロー付けをしてパイプの外径の余りを削る。"
       },
       {
-        image: 'purosesu-11.PNG',
-        alt: '制作プロセス 11',
-        title: '',
-        meta: '',
-        description: '朴炭で磨いて中性洗剤で表面を中性にし、大根おろし液につけ煮色液に30分浸ける。'
+        image: "purosesu-11.PNG",
+        alt: "制作プロセス 11",
+        title: "",
+        meta: "",
+        description: "朴炭で磨いて中性洗剤で表面を中性にし、大根おろし液につけ煮色液に30分浸ける。"
       }
     ];
-    let currentCategory = 'daigaku';
+
+    let currentCategory = "daigaku";
     let currentSlide = 1;
     let currentProcess = 1;
+
     const body = document.body;
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menuPanel = document.querySelector('.menu-panel');
-    const menuWorksToggle = document.querySelector('.menu-works-toggle');
-    const menuGroup = document.querySelector('.menu-group');
-    const menuLinks = document.querySelectorAll('.menu-link');
-    const categoryButtons = document.querySelectorAll('.category-button');
-    const menuCategoryLinks = document.querySelectorAll('[data-menu-category]');
-    const slide = document.querySelector('.slide');
-    const slideImage = document.getElementById('slideImage');
-    const imagePlaceholder = document.getElementById('imagePlaceholder');
-    const workTitle = document.getElementById('workTitle');
-    const workMeta = document.getElementById('workMeta');
-    const slideCount = document.getElementById('slideCount');
-    const slideDescription = document.getElementById('slideDescription');
-    const captionArea = document.getElementById('captionArea');
-    const prevButton = document.querySelector('.slider-button.prev');
-    const nextButton = document.querySelector('.slider-button.next');
-    const processSlide = document.querySelector('.process-slide');
-    const processImage = document.getElementById('processImage');
-    const processPlaceholder = document.getElementById('processPlaceholder');
-    const processCount = document.getElementById('processCount');
-    const processSide = document.querySelector('.process-side');
-    const processTitle = document.getElementById('processTitle');
-    const processMeta = document.getElementById('processMeta');
-    const processDescription = document.getElementById('processDescription');
-    const processDescriptionArea = document.getElementById('processDescriptionArea');
-    const processPrevButton = document.querySelector('.process-prev');
-    const processNextButton = document.querySelector('.process-next');
-    const imageModal = document.querySelector('.image-modal');
-    const modalImage = document.getElementById('modalImage');
-    const modalCaption = document.getElementById('modalCaption');
-    const modalClose = document.querySelector('.modal-close');
-    const projectImageButtons = document.querySelectorAll('.project-image-button');
-    window.addEventListener('load', () => {
-      body.classList.add('is-loaded');
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menuPanel = document.querySelector(".menu-panel");
+    const menuWorksToggle = document.querySelector(".menu-works-toggle");
+    const menuGroup = document.querySelector(".menu-group");
+    const menuLinks = document.querySelectorAll(".menu-link");
+    const categoryButtons = document.querySelectorAll(".category-button");
+    const menuCategoryLinks = document.querySelectorAll("[data-menu-category]");
+
+    const slide = document.querySelector(".slide");
+    const slideImage = document.getElementById("slideImage");
+    const imagePlaceholder = document.getElementById("imagePlaceholder");
+    const workTitle = document.getElementById("workTitle");
+    const workMeta = document.getElementById("workMeta");
+    const slideCount = document.getElementById("slideCount");
+    const slideDescription = document.getElementById("slideDescription");
+    const captionArea = document.getElementById("captionArea");
+    const prevButton = document.querySelector(".slider-button.prev");
+    const nextButton = document.querySelector(".slider-button.next");
+
+    const processSlide = document.querySelector(".process-slide");
+    const processImage = document.getElementById("processImage");
+    const processPlaceholder = document.getElementById("processPlaceholder");
+    const processCount = document.getElementById("processCount");
+    const processTitle = document.getElementById("processTitle");
+    const processMeta = document.getElementById("processMeta");
+    const processDescription = document.getElementById("processDescription");
+    const processDescriptionArea = document.getElementById("processDescriptionArea");
+    const processPrevButton = document.querySelector(".process-prev");
+    const processNextButton = document.querySelector(".process-next");
+
+    const imageModal = document.querySelector(".image-modal");
+    const modalImage = document.getElementById("modalImage");
+    const modalCaption = document.getElementById("modalCaption");
+    const modalClose = document.querySelector(".modal-close");
+    const projectImageButtons = document.querySelectorAll(".project-image-button");
+
+    window.addEventListener("load", () => {
+      body.classList.add("is-loaded");
       updateSlide();
       updateProcessSlide();
     });
-    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealElements = document.querySelectorAll(".reveal");
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
+          entry.target.classList.add("is-visible");
         }
       });
     }, {
       threshold: 0.18
     });
+
     revealElements.forEach((element) => {
       observer.observe(element);
     });
+
     function openMenu() {
-      body.classList.add('menu-open');
-      menuToggle.setAttribute('aria-expanded', 'true');
+      body.classList.add("menu-open");
+      menuToggle.setAttribute("aria-expanded", "true");
     }
+
     function closeMenu() {
-      body.classList.remove('menu-open');
-      menuToggle.setAttribute('aria-expanded', 'false');
+      body.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
     }
+
     function toggleMenu() {
-      if (body.classList.contains('menu-open')) {
+      if (body.classList.contains("menu-open")) {
         closeMenu();
       } else {
         openMenu();
       }
     }
+
     function toggleWorksMenu() {
-      const isOpen = menuGroup.classList.toggle('is-open');
-      menuWorksToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      const isOpen = menuGroup.classList.toggle("is-open");
+      menuWorksToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     }
+
     function makeDots(total, current) {
       return Array.from({ length: total }, (_, index) => {
-        return index + 1 === current ? '●' : '・';
-      }).join(' ');
+        return index + 1 === current ? "●" : "・";
+      }).join(" ");
     }
-    function updateSlide(direction = 'next') {
+
+    function updateSlide(direction = "next") {
       const data = works[currentCategory];
       const item = data.items[currentSlide - 1];
-      slide.classList.remove('from-left', 'from-right');
+
+      slide.classList.remove("from-left", "from-right");
       void slide.offsetWidth;
-      slide.classList.add(direction === 'next' ? 'from-right' : 'from-left');
+      slide.classList.add(direction === "next" ? "from-right" : "from-left");
+
       workTitle.textContent = item.title;
       workMeta.textContent = item.meta;
-      workMeta.classList.toggle('is-empty', !item.meta);
+      workMeta.classList.toggle("is-empty", !item.meta);
       slideCount.textContent = makeDots(data.items.length, currentSlide);
+
       slideDescription.textContent = item.description;
       imagePlaceholder.textContent = item.image;
-      captionArea.classList.toggle('is-empty', !item.description);
-      slideImage.classList.remove('is-hidden');
+      captionArea.classList.toggle("is-empty", !item.description);
+
+      slideImage.classList.remove("is-hidden");
       slideImage.src = item.image;
       slideImage.alt = item.alt;
     }
-    function updateProcessSlide(direction = 'next') {
+
+    function updateProcessSlide(direction = "next") {
       const item = processes[currentProcess - 1];
-      processSlide.classList.remove('from-left', 'from-right');
+
+      processSlide.classList.remove("from-left", "from-right");
       void processSlide.offsetWidth;
-      processSlide.classList.add(direction === 'next' ? 'from-right' : 'from-left');
+      processSlide.classList.add(direction === "next" ? "from-right" : "from-left");
+
       processCount.textContent = makeDots(processes.length, currentProcess);
       processTitle.textContent = item.title;
       processMeta.textContent = item.meta;
       processDescription.textContent = item.description;
       processPlaceholder.textContent = item.image;
-      processSide.classList.toggle('has-title', !!item.title);
-      processTitle.classList.toggle('is-empty', !item.title);
-      processMeta.classList.toggle('is-empty', !item.meta);
-      processDescriptionArea.classList.toggle('is-empty', !item.description);
-      processImage.classList.remove('is-hidden');
+
+      processTitle.classList.toggle("is-empty", !item.title);
+      processMeta.classList.toggle("is-empty", !item.meta);
+      processDescriptionArea.classList.toggle("is-empty", !item.description);
+
+      processImage.classList.remove("is-hidden");
       processImage.src = item.image;
       processImage.alt = item.alt;
     }
+
     function changeCategory(category) {
       currentCategory = category;
       currentSlide = 1;
+
       categoryButtons.forEach((button) => {
-        button.classList.toggle('active', button.dataset.category === category);
+        button.classList.toggle("active", button.dataset.category === category);
       });
+
       menuCategoryLinks.forEach((link) => {
-        link.classList.toggle('active', link.dataset.menuCategory === category);
+        link.classList.toggle("active", link.dataset.menuCategory === category);
       });
-      updateSlide('next');
+
+      updateSlide("next");
     }
+
     function openImageModal() {
-      if (slideImage.classList.contains('is-hidden')) {
+      if (slideImage.classList.contains("is-hidden")) {
         return;
       }
+
       const data = works[currentCategory];
       const item = data.items[currentSlide - 1];
+
       modalImage.src = item.image;
       modalImage.alt = item.alt;
+
       modalCaption.textContent = item.meta
         ? `${data.title} / ${item.title} / ${item.meta}`
         : `${data.title} / ${item.title}`;
-      body.classList.add('modal-open');
-      imageModal.setAttribute('aria-hidden', 'false');
+
+      body.classList.add("modal-open");
+      imageModal.setAttribute("aria-hidden", "false");
     }
+
     function openProcessImageModal() {
-      if (processImage.classList.contains('is-hidden')) {
+      if (processImage.classList.contains("is-hidden")) {
         return;
       }
+
       const item = processes[currentProcess - 1];
+
       modalImage.src = item.image;
       modalImage.alt = item.alt;
-      modalCaption.textContent = item.title ? `PROCESS / ${item.title}` : 'PROCESS';
-      body.classList.add('modal-open');
-      imageModal.setAttribute('aria-hidden', 'false');
+      modalCaption.textContent = item.title ? `PROCESS / ${item.title}` : "PROCESS";
+
+      body.classList.add("modal-open");
+      imageModal.setAttribute("aria-hidden", "false");
     }
+
     function openProjectImageModal(image, alt) {
       modalImage.src = image;
       modalImage.alt = alt;
       modalCaption.textContent = alt;
-      body.classList.add('modal-open');
-      imageModal.setAttribute('aria-hidden', 'false');
+
+      body.classList.add("modal-open");
+      imageModal.setAttribute("aria-hidden", "false");
     }
+
     function closeImageModal() {
-      body.classList.remove('modal-open');
-      imageModal.setAttribute('aria-hidden', 'true');
-      modalImage.src = '';
-      modalImage.alt = '';
+      body.classList.remove("modal-open");
+      imageModal.setAttribute("aria-hidden", "true");
+      modalImage.src = "";
+      modalImage.alt = "";
     }
-    menuToggle.addEventListener('click', toggleMenu);
-    menuWorksToggle.addEventListener('click', toggleWorksMenu);
+
+    menuToggle.addEventListener("click", toggleMenu);
+    menuWorksToggle.addEventListener("click", toggleWorksMenu);
+
     menuLinks.forEach((link) => {
-      link.addEventListener('click', () => {
+      link.addEventListener("click", () => {
         closeMenu();
       });
     });
+
     menuCategoryLinks.forEach((link) => {
-      link.addEventListener('click', () => {
+      link.addEventListener("click", () => {
         changeCategory(link.dataset.menuCategory);
         closeMenu();
       });
     });
-    document.addEventListener('click', (event) => {
+
+    document.addEventListener("click", (event) => {
       const clickedInsideMenu = menuPanel.contains(event.target);
       const clickedToggle = menuToggle.contains(event.target);
-      if (!clickedInsideMenu && !clickedToggle && body.classList.contains('menu-open')) {
+
+      if (!clickedInsideMenu && !clickedToggle && body.classList.contains("menu-open")) {
         closeMenu();
       }
     });
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') {
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
         closeMenu();
         closeImageModal();
       }
-      if (!body.classList.contains('modal-open') && event.key === 'ArrowLeft') {
+
+      if (!body.classList.contains("modal-open") && event.key === "ArrowLeft") {
         prevButton.click();
       }
-      if (!body.classList.contains('modal-open') && event.key === 'ArrowRight') {
+
+      if (!body.classList.contains("modal-open") && event.key === "ArrowRight") {
         nextButton.click();
       }
     });
-    slideImage.addEventListener('error', () => {
-      slideImage.classList.add('is-hidden');
+
+    slideImage.addEventListener("error", () => {
+      slideImage.classList.add("is-hidden");
     });
-    slideImage.addEventListener('load', () => {
-      slideImage.classList.remove('is-hidden');
+
+    slideImage.addEventListener("load", () => {
+      slideImage.classList.remove("is-hidden");
     });
-    processImage.addEventListener('error', () => {
-      processImage.classList.add('is-hidden');
+
+    processImage.addEventListener("error", () => {
+      processImage.classList.add("is-hidden");
     });
-    processImage.addEventListener('load', () => {
-      processImage.classList.remove('is-hidden');
+
+    processImage.addEventListener("load", () => {
+      processImage.classList.remove("is-hidden");
     });
-    slideImage.addEventListener('click', openImageModal);
-    processImage.addEventListener('click', openProcessImageModal);
-    modalClose.addEventListener('click', closeImageModal);
-    imageModal.addEventListener('click', (event) => {
+
+    slideImage.addEventListener("click", openImageModal);
+    processImage.addEventListener("click", openProcessImageModal);
+
+    modalClose.addEventListener("click", closeImageModal);
+
+    imageModal.addEventListener("click", (event) => {
       if (event.target === imageModal) {
         closeImageModal();
       }
     });
+
     categoryButtons.forEach((button) => {
-      button.addEventListener('click', () => {
+      button.addEventListener("click", () => {
         changeCategory(button.dataset.category);
       });
     });
+
     projectImageButtons.forEach((button) => {
-      const image = button.querySelector('img');
-      button.addEventListener('click', () => {
-        openProjectImageModal(image.getAttribute('src'), image.getAttribute('alt'));
+      const image = button.querySelector("img");
+
+      button.addEventListener("click", () => {
+        openProjectImageModal(
+          image.getAttribute("src"),
+          image.getAttribute("alt")
+        );
       });
     });
-    prevButton.addEventListener('click', () => {
+
+    prevButton.addEventListener("click", () => {
       const maxSlide = works[currentCategory].items.length;
-      currentSlide = currentSlide === 1 ? maxSlide : currentSlide - 1;
-      updateSlide('prev');
+
+      currentSlide = currentSlide === 1
+        ? maxSlide
+        : currentSlide - 1;
+
+      updateSlide("prev");
     });
-    nextButton.addEventListener('click', () => {
+
+    nextButton.addEventListener("click", () => {
       const maxSlide = works[currentCategory].items.length;
-      currentSlide = currentSlide === maxSlide ? 1 : currentSlide + 1;
-      updateSlide('next');
+
+      currentSlide = currentSlide === maxSlide
+        ? 1
+        : currentSlide + 1;
+
+      updateSlide("next");
     });
-    processPrevButton.addEventListener('click', () => {
-      currentProcess = currentProcess === 1 ? processes.length : currentProcess - 1;
-      updateProcessSlide('prev');
+
+    processPrevButton.addEventListener("click", () => {
+      currentProcess = currentProcess === 1
+        ? processes.length
+        : currentProcess - 1;
+
+      updateProcessSlide("prev");
     });
-    processNextButton.addEventListener('click', () => {
-      currentProcess = currentProcess === processes.length ? 1 : currentProcess + 1;
-      updateProcessSlide('next');
+
+    processNextButton.addEventListener("click", () => {
+      currentProcess = currentProcess === processes.length
+        ? 1
+        : currentProcess + 1;
+
+      updateProcessSlide("next");
     });
   </script>
 </body>
